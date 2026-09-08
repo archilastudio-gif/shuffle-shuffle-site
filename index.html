@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shuffle Shuffle</title>
+<title>Shuffle Shuffle: Animal Farm</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -20,6 +20,7 @@
   .bunny { width: 180px; height: 180px; border-radius: 50%;
     background: #e7f0da; object-fit: contain; margin-bottom: 18px; }
   h1 { font-size: 2.5rem; color: #3f352d; letter-spacing: .5px; }
+  .brand-subtitle { font-size: 1.35rem; color: #5d7140; font-weight: 700; margin-top: 2px; }
   .tagline { font-size: 1.2rem; color: #7a6f60; margin: 14px 0 28px; }
   .pillars { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 26px 0; }
   .pill { background: #eef4e2; color: #5d7140; border-radius: 999px;
@@ -44,29 +45,32 @@
       <button onclick="setLang('zh')">简体</button>
       <button onclick="setLang('tw')">繁體</button>
     </div>
-    <img class="bunny" src="bunny.png" alt="Shuffle Shuffle bunny">
+    <img class="bunny" src="bunny.png" alt="Shuffle Shuffle: Animal Farm bunny">
     <h1>Shuffle Shuffle</h1>
+    <div class="brand-subtitle lang lang-en">Animal Farm</div>
+    <div class="brand-subtitle lang lang-zh">农场奇遇记</div>
+    <div class="brand-subtitle lang lang-tw">農場奇遇記</div>
 
     <div class="lang lang-en">
       <p class="tagline">A calm, beautiful follow-the-animal shuffle game.<br>Train your focus in 10 seconds.</p>
       <div class="pillars"><span class="pill">Relaxing</span><span class="pill">Easy to learn</span><span class="pill">Made to be shared</span></div>
-      <div class="badge">Coming soon to Google Play</div>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.archilastudio.shuffleshuffle">Get it on Google Play</a>
     </div>
     <div class="lang lang-zh">
       <p class="tagline">一款平静、好看的"跟住动物"洗牌游戏。<br>10 秒上手，悄悄训练你的专注力。</p>
       <div class="pillars"><span class="pill">放松</span><span class="pill">易上手</span><span class="pill">为分享而生</span></div>
-      <div class="badge">即将登陆 Google Play</div>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.archilastudio.shuffleshuffle&amp;hl=zh_CN">前往 Google Play 下载</a>
     </div>
     <div class="lang lang-tw">
       <p class="tagline">一款平靜、好看的「跟住動物」洗牌遊戲。<br>10 秒上手，悄悄訓練你的專注力。</p>
       <div class="pillars"><span class="pill">放鬆</span><span class="pill">易上手</span><span class="pill">為分享而生</span></div>
-      <div class="badge">即將登陸 Google Play</div>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.archilastudio.shuffleshuffle&amp;hl=zh_TW">前往 Google Play 下載</a>
     </div>
 
     <footer>
-      <span class="lang lang-en">© 2026 Shuffle Shuffle · <a href="privacy.html">Privacy Policy</a></span>
-      <span class="lang lang-zh">© 2026 Shuffle Shuffle · <a href="privacy.html">隐私政策</a></span>
-      <span class="lang lang-tw">© 2026 Shuffle Shuffle · <a href="privacy.html">隱私政策</a></span>
+      <span class="lang lang-en">© 2026 Shuffle Shuffle: Animal Farm · <a href="privacy.html">Privacy Policy</a></span>
+      <span class="lang lang-zh">© 2026 Shuffle Shuffle：农场奇遇记 · <a href="privacy.html">隐私政策</a></span>
+      <span class="lang lang-tw">© 2026 Shuffle Shuffle：農場奇遇記 · <a href="privacy.html">隱私政策</a></span>
     </footer>
   </div>
 <script>
