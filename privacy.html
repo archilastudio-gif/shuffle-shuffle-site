@@ -12,23 +12,26 @@ h1 { font-size: 2rem; color: #3f352d; margin-bottom: 6px; }
 .date { color: #8a8073; font-size: .92rem; margin-bottom: 24px; }
 h2 { font-size: 1.2rem; color: #5d7140; margin: 26px 0 8px; }
 p { margin-bottom: 12px; } ul { margin: 0 0 12px 22px; } li { margin-bottom: 8px; } a { color: #5d7140; }
-.langbar { margin-bottom: 24px; }
-.langbar button { border: none; background: #eef4e2; color: #5d7140; border-radius: 999px; padding: 7px 16px; margin: 0 4px; font-weight: 600; cursor: pointer; }
+.langbar { margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.langbar button { border: none; background: #eef4e2; color: #5d7140; border-radius: 999px; padding: 7px 16px; margin: 0; font-weight: 600; cursor: pointer; }
 .back { display: inline-block; margin-top: 26px; color: #5d7140; }
-.lang { display: none; } body.show-en .lang-en, body.show-zh .lang-zh, body.show-tw .lang-tw { display: block; }
+.lang { display: none; } body.show-en .lang-en, body.show-es .lang-es, body.show-zh .lang-zh, body.show-tw .lang-tw { display: block; }
+.back .lang { display: none; }
+body.show-en .back .lang-en, body.show-es .back .lang-es, body.show-zh .back .lang-zh, body.show-tw .back .lang-tw { display: inline; }
 </style>
 </head>
 <body class="show-en">
 <div class="card">
 <div class="langbar">
 <button onclick="setLang('en')">English</button>
+<button onclick="setLang('es')">Español</button>
 <button onclick="setLang('zh')">简体</button>
 <button onclick="setLang('tw')">繁體</button>
 </div>
 
 <div class="lang lang-en">
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: August 27, 2026</p>
+<p class="date">Last updated: September 8, 2026</p>
 <p>Shuffle Shuffle: Animal Farm ("the app", "we") is a relaxing puzzle game. This policy explains how data is handled when you use the app.</p>
 <h2>Game data stored on your device</h2>
 <p>Your progress, coins, streaks, certificates, chosen nickname, language preference, and any voice recordings you make are stored only in the app's private storage on your device. Voice recordings are never uploaded. We do not operate an account or game-data server. Uninstalling the app deletes this local data.</p>
@@ -47,9 +50,30 @@ p { margin-bottom: 12px; } ul { margin: 0 0 12px 22px; } li { margin-bottom: 8px
 <p>We will update this policy and its date when our data practices change.</p>
 </div>
 
+<div class="lang lang-es">
+<h1>Política de privacidad</h1>
+<p class="date">Última actualización: 8 de septiembre de 2026</p>
+<p>Shuffle Shuffle: Animal Farm ("la aplicación", "nosotros") es un juego de rompecabezas relajante. Esta política explica cómo se manejan los datos cuando usas la aplicación.</p>
+<h2>Datos del juego almacenados en tu dispositivo</h2>
+<p>Tu progreso, monedas, rachas, certificados, el apodo que elijas, la preferencia de idioma y cualquier grabación de voz que hagas se almacenan únicamente en el espacio privado de la aplicación en tu dispositivo. Las grabaciones de voz nunca se suben. No operamos cuentas de usuario ni servidores de datos del juego. Al desinstalar la aplicación se eliminan estos datos locales.</p>
+<h2>Anuncios opcionales con recompensa</h2>
+<p>La aplicación usa Google AdMob para ofrecer anuncios opcionales con recompensa. Tú decides si quieres ver un anuncio para obtener un beneficio dentro del juego, como una pista adicional, revivir en el mismo nivel o duplicar las monedas del Desafío Diario. Los anuncios con recompensa no interrumpen el juego normal.</p>
+<p>El SDK de anuncios móviles de Google puede recopilar automáticamente y compartir con Google tu dirección IP (que puede usarse para estimar tu ubicación general), interacciones con la aplicación como inicios, toques y visualizaciones de video, información de diagnóstico como datos de fallos y rendimiento, e identificadores del dispositivo u otros identificadores, incluido el ID de publicidad o el ID del conjunto de aplicaciones. Google usa esta información para publicidad, analítica, prevención del fraude, seguridad y cumplimiento normativo. Los datos se cifran en tránsito.</p>
+<h2>Consentimiento y opciones</h2>
+<p>Cuando la ley lo exige, la aplicación solicita tu consentimiento mediante la Plataforma de Mensajería para Usuarios de Google antes de solicitar anuncios y muestra la opción <strong>Opciones de privacidad</strong> en Ajustes cuando está disponible. Puedes rechazarlo cuando se ofrezca; puedes seguir jugando sin ver anuncios con recompensa. También puedes administrar o restablecer tu ID de publicidad en los ajustes de Android.</p>
+<h2>Privacidad de menores</h2>
+<p>El público objetivo de la aplicación en Google Play es de 13 años en adelante. La aplicación no está dirigida a menores de 13 años. El contenido de los anuncios está limitado a la clasificación G.</p>
+<h2>Servicio de terceros</h2>
+<p>Google AdMob proporciona los anuncios y se rige por la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>. No vendemos datos personales.</p>
+<h2>Tus opciones y contacto</h2>
+<p>Puedes eliminar los datos del juego almacenados localmente desinstalando la aplicación. Puedes enviar preguntas o solicitudes de privacidad a <a href="mailto:archila.studio@gmail.com">archila.studio@gmail.com</a>.</p>
+<h2>Cambios</h2>
+<p>Actualizaremos esta política y su fecha cuando cambien nuestras prácticas de datos.</p>
+</div>
+
 <div class="lang lang-zh">
 <h1>隐私政策</h1>
-<p class="date">最后更新：2026 年 8 月 27 日</p>
+<p class="date">最后更新：2026 年 9 月 8 日</p>
 <p>《Shuffle Shuffle：农场奇遇记》（“本应用”“我们”）是一款轻松的益智游戏。本政策说明你使用本应用时数据如何被处理。</p>
 <h2>保存在设备上的游戏数据</h2>
 <p>你的进度、金币、连胜、证书、昵称、语言偏好，以及你自行录制的语音，都只保存在设备的应用私有空间。语音录音不会上传。我们不运营用户账号或游戏数据服务器。卸载应用会删除这些本地数据。</p>
@@ -70,7 +94,7 @@ p { margin-bottom: 12px; } ul { margin: 0 0 12px 22px; } li { margin-bottom: 8px
 
 <div class="lang lang-tw">
 <h1>隱私政策</h1>
-<p class="date">最後更新：2026 年 8 月 27 日</p>
+<p class="date">最後更新：2026 年 9 月 8 日</p>
 <p>《Shuffle Shuffle：農場奇遇記》（「本應用」「我們」）是一款輕鬆的益智遊戲。本政策說明你使用本應用時資料如何被處理。</p>
 <h2>儲存在裝置上的遊戲資料</h2>
 <p>你的進度、金幣、連勝、證書、暱稱、語言偏好，以及你自行錄製的語音，都只儲存在裝置的應用程式私人空間。語音錄音不會上傳。我們不營運使用者帳號或遊戲資料伺服器。解除安裝應用程式會刪除這些本機資料。</p>
@@ -89,12 +113,13 @@ p { margin-bottom: 12px; } ul { margin: 0 0 12px 22px; } li { margin-bottom: 8px
 <p>資料做法發生變化時，我們會更新本政策及日期。</p>
 </div>
 
-<a class="back" href="index.html">← <span class="lang lang-en" style="display:inline">Home</span><span class="lang lang-zh" style="display:inline">返回首页</span><span class="lang lang-tw" style="display:inline">返回首頁</span></a>
+<a class="back" href="index.html">← <span class="lang lang-en">Home</span><span class="lang lang-es">Inicio</span><span class="lang lang-zh">返回首页</span><span class="lang lang-tw">返回首頁</span></a>
 </div>
 <script>
 function setLang(c){ document.body.className = 'show-' + c; }
 var l = (navigator.language || 'en').toLowerCase();
-if (l.indexOf('zh') === 0) setLang(l.indexOf('tw') > -1 || l.indexOf('hant') > -1 || l.indexOf('hk') > -1 ? 'tw' : 'zh');
+if (l.indexOf('es') === 0) setLang('es');
+else if (l.indexOf('zh') === 0) setLang(l.indexOf('tw') > -1 || l.indexOf('hant') > -1 || l.indexOf('hk') > -1 ? 'tw' : 'zh');
 </script>
 </body>
 </html>
